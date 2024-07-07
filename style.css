@@ -1,0 +1,175 @@
+@font-face {
+    font-family: Bruce-Forever;
+    src: url(font/bruce-forever.regular.ttf);
+}
+
+@font-face {
+    font-family: Staatliches;
+    src: url(font/Staatliches-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(font/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(font/Lato-Regular.ttf);
+}
+
+body {
+    background: linear-gradient(#000000,#b6503c54,#000000), 
+            url("img/dev-d2Py_uhXJQo-unsplash.jpg"); /*tło pobrane z Unsplash
+            https://unsplash.com/photos/the-walking-dead-comic-book-d2Py_uhXJQo*/
+    background-size: 33%;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+/* Do koncepcji nie pasowało mi robić sticky menu - wtedy wszystko się zlewa ze sobą, przez co jest niefunkcjonalne i zniechęcające dla odbiorcy */
+
+h1.logo {
+    font: 30pt Bruce-Forever;
+    color: #fcd988;
+    letter-spacing: 6px;
+    text-align: center;
+    text-shadow: 4px 5px 7px #d45e30;
+    background-color: #000000;
+    padding: 15px;
+    margin: -8px;
+}
+
+h1.logo:hover {
+    transition: all 0.4s ease;
+    color:#ec3434;
+}
+
+nav {
+    background-color: #000000;
+    margin: -8px;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font: 20px Staatliches;
+    line-height: 2em;
+}
+
+.menu > li {
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-right: 1px solid  #d45e30;
+}
+
+.menu > li:first-child {
+    border-left: 1px solid  #d45e30;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fcd988;
+}
+
+.menu a:hover {
+    color: #d45e30;
+    transition: all 0.4s ease;
+}
+
+#content {
+   background-color: #000000be;
+   color:#fcd988;
+   margin-top: 3%;
+   margin-right: 10%;
+   margin-left: 10%;
+   padding: 20px;
+   border: 1px solid #d45e30;
+   border-radius: 60px;
+}
+
+#content h2 {
+    font: 20pt Staatliches;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 4px 5px 7px #d45e30;
+}
+
+#content ol {
+    font: 16px Oswald;
+    margin-top: 15px;
+}
+
+#content ol > li {
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+.btas { /*zdjęcia - zrzuty ekranu i Wikipedia */
+    width: 200px;
+    max-height: 140px;
+    margin: 10px;
+	border: black 1px solid;
+	float: right;
+    filter: contrast(120%); 
+}
+
+.btas:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+#content p {
+    font: 16px Lato;
+    text-indent: 1.5em;
+    line-height: 1.5em; 
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 5px;
+}
+
+#content p a {
+    font: 16px Bruce-Forever;
+    font-weight: bold;
+    padding: 5px;
+    color: #d45e30;
+    text-decoration: none;
+}
+
+#content p a:hover {
+    color:#ec3434
+}
+
+.fot { /*zdjęcia - głównie Wikipedia polska i angielska*/
+    display: block;
+    width: 25%;
+    max-height: 320px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.fot:hover {
+    transform: scale(1.1); 
+}
+
+footer {
+   margin-right: 10%;
+   margin-left: 10%;
+}
+
+footer p {
+    font: 12pt Staatliches;
+    background-color: #000000be;
+    margin-top: 0;
+    letter-spacing: 3px;
+    color:#fcd988;
+    text-align: center;
+    border: 1px solid #d45e30;
+    border-top: none;
+    border-radius: 60px;
+    padding: 5px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
